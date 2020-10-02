@@ -10,7 +10,7 @@ import { patterns, list } from "./patterns";
   const onCancel = () => {
     return false;
   };
-  const onSubmit = async (prompt: PromptObject, answer: PromptType) => {
+  const onSubmit = async (_prompt: PromptObject, answer: PromptType) => {
     const pattern = patterns[answer];
     if (pattern) {
       await pattern.f();

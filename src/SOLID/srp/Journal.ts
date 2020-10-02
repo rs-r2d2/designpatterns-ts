@@ -1,5 +1,3 @@
-import { exception } from "console";
-
 /**
  * Journal
  * @template J

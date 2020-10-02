@@ -1,5 +1,4 @@
 import { Specification } from "./Products.interface";
-import { Color, Product } from "./Product";
 
 /**
  * Combined specification
