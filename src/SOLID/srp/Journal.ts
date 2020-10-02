@@ -46,6 +46,21 @@ class Journal {
     });
     return entriesString;
   }
+
+  /**
+   * Saves to file
+   * @param J
+   * This function could have been implemented here.
+   * But, it violates single responsibility principle.
+   */
+  // public async saveToFile(J: Journal) {
+  //   try {
+  //     await fsPromises.writeFile("journal.txt", `${J}`);
+  //   } catch (e) {
+  //     console.error(e.message);
+  //     throw e;
+  //   }
+  // }
 }
 
 export default Journal;

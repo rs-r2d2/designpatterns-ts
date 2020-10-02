@@ -1,30 +1,24 @@
+import prompts, { PromptObject, PromptType } from "prompts";
 import { patterns, list } from "./patterns";
-const readline = require("readline");
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-function prompt() {
-  rl.question(
-    `Which pattern do you want to execute ? ${list}`,
-    async (index: string) => {
-      console.log(index);
-      const pattern = patterns[index];
-      if (pattern) {
-        await pattern.f();
-      } else {
-        console.log("Incorrect option");
-      }
-      prompt();
+(async () => {
+  const question: PromptObject = {
+    type: "number",
+    name: "patternIndex",
+    message: `Which pattern do you want to execute ? ${list}`,
+  };
+  const onCancel = () => {
+    return false;
+  };
+  const onSubmit = async (prompt: PromptObject, answer: PromptType) => {
+    const pattern = patterns[answer];
+    if (pattern) {
+      await pattern.f();
+    } else {
+      console.log("Incorrect option.");
     }
-  );
-}
-
-rl.on("close", function () {
-  console.log("Executer exited");
-  process.exit(0);
-});
-
-prompt();
+    console.log("Resetting..");
+    await prompts(question, { onCancel, onSubmit });
+  };
+  await prompts(question, { onCancel, onSubmit });
+})();
