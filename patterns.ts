@@ -1,5 +1,5 @@
-import ocp from "./src/SOLID/ocp";
-import srp from "./src/SOLID/srp";
+import ocp from "./src/solid/ocp";
+import srp from "./src/solid/srp";
 
 export const patterns: any = {
   1: { n: "Single Responsibility Principle", f: srp },
