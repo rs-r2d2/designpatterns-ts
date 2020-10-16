@@ -10,12 +10,12 @@ import RelationShipBrowser from "./RelationShipBrowser.interface";
 export default class Relationship implements RelationShipBrowser {
     private relations:Relation[] = []
 
-    public addParentAndChild(parent: Person, child: Person) {
+    public addParentAndChild(parent: Person, child: Person): void {
         this.relations.push(new Relation(parent, RelationshipTypes.PARENT, child));
         this.relations.push(new Relation(child, RelationshipTypes.CHILD, parent));
     }
 
-    public addSibling(sibling1: Person, sibling2: Person) {
+    public addSibling(sibling1: Person, sibling2: Person): void {
         this.relations.push(new Relation(sibling1, RelationshipTypes.SIBLING, sibling2));
         this.relations.push(new Relation(sibling2, RelationshipTypes.SIBLING, sibling1));
     }

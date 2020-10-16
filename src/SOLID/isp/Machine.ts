@@ -8,7 +8,7 @@ export default class Machine implements MachineInterface {
    * Prints machine
    * @param content -
    */
-  public print(content: Document) {
+  public print(content: Document): void {
     console.log(`printing:${content.text}`);
   }
 
@@ -16,7 +16,7 @@ export default class Machine implements MachineInterface {
    * Scans machine
    * @param content - Document wih content
    */
-  public scan(content: Document) {
+  public scan(content: Document): void {
     console.log(`scanning:${content.text}`);
   }
 
@@ -24,7 +24,7 @@ export default class Machine implements MachineInterface {
    * Fax machine
    * @param content -
    */
-  public fax(content: Document) {
+  public fax(content: Document): void {
     console.log(`faxing:${content.text}`);
   }
 }

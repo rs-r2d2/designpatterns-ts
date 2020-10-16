@@ -1,6 +1,6 @@
 export default class Person {
     constructor(private name: string) {}
-    getName() {
+    getName() : string {
         return this.name;
     }
 }

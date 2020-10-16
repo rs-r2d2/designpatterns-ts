@@ -7,13 +7,13 @@ import { Product, Size } from "./Product";
 export class SizeSpecification implements Specification<Product> {
   /**
    * Creates an instance of Size specification.
-   * @param size
+   * @param size -
    */
   constructor(private size: Size) {}
 
   /**
    * Determines whether satisfied is
-   * @param item
+   * @param item -
    * @returns true if satisfied
    */
   isSatisfied(item: Product): boolean {

@@ -6,8 +6,8 @@ import { Color, Product, Size } from "./Product";
 export class ProductFilter {
   /**
    * Filters by color
-   * @param products
-   * @param color
+   * @param products -
+   * @param color -
    * @returns by color
    */
   public filterByColor(products: Product[], color: Color): Product[] {
@@ -16,8 +16,8 @@ export class ProductFilter {
 
   /**
    * Filters by size
-   * @param products
-   * @param size
+   * @param products -
+   * @param size -
    * @returns by size
    */
   public filterBySize(products: Product[], size: Size): Product[] {
@@ -26,9 +26,9 @@ export class ProductFilter {
 
   /**
    * Filters by size and color
-   * @param products
-   * @param size
-   * @param color
+   * @param products -
+   * @param size -
+   * @param color -
    * @returns by size and color
    */
   public filterBySizeAndColor(

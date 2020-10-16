@@ -14,7 +14,7 @@ export class Rectangle {
    * @param w
    * @returns width
    */
-  public setWidth(w: number) {
+  public setWidth(w: number): void {
     this.width = w;
   }
 
@@ -23,7 +23,7 @@ export class Rectangle {
    * @param h
    * @returns height
    */
-  public setHeight(h: number) {
+  public setHeight(h: number): void {
     this.height = h;
   }
   /**

@@ -7,9 +7,9 @@ import Journal from "./Journal";
 class Persistent {
   /**
    * Saves to file
-   * @param J
+   * @param J - Journal
    */
-  public async saveToFile(J: Journal) {
+  public async saveToFile(J: Journal): Promise<void> {
     try {
       await fsPromises.writeFile("journal.txt", `${J}`);
     } catch (e) {

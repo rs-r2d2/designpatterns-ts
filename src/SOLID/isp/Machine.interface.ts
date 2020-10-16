@@ -5,17 +5,17 @@ import Document from "./Document";
 export default interface MachineInterface {
   /**
    *
-   * @param content
+   * @param content -
    */
   print(content: Document): void;
   /**
    *
-   * @param content
+   * @param content -
    */
   scan(content: Document): void;
   /**
    *
-   * @param content
+   * @param content -
    */
   fax(content: Document): void;
 }

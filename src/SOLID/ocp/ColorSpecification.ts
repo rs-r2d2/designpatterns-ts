@@ -7,13 +7,13 @@ import { Product, Color } from "./Product";
 export class ColorSpecification implements Specification<Product> {
   /**
    * Creates an instance of color specification.
-   * @param color
+   * @param color -
    */
   constructor(private color: Color) {}
 
   /**
    * Determines whether satisfied is
-   * @param item
+   * @param item -
    * @returns true if satisfied
    */
   isSatisfied(item: Product): boolean {

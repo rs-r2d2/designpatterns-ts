@@ -23,9 +23,9 @@ export enum Size {
 export class Product {
   /**
    * Creates an instance of product.
-   * @param name
-   * @param color
-   * @param size
+   * @param name -
+   * @param color -
+   * @param size -
    */
   constructor(public name: string, public color: Color, public size: Size) {}
 }

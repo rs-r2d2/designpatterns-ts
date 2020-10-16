@@ -14,7 +14,7 @@ class Journal {
    * Adds entry
    * @param text
    */
-  public addEntry(text: string) {
+  public addEntry(text: string): void {
     this.entries.push(text);
   }
 
@@ -22,14 +22,14 @@ class Journal {
    * Removes entry
    * @param index
    */
-  public removeEntry(index: number) {
+  public removeEntry(index: number): void {
     this.entries.splice(index, 1);
   }
 
   /**
    * Gets entries
    */
-  public getEntries() {
+  public getEntries(): string[] {
     return this.entries;
   }
 
@@ -47,7 +47,7 @@ class Journal {
 
   /**
    * Saves to file
-   * @param J
+   * @param J -
    * This function could have been implemented here.
    * But, it violates single responsibility principle.
    */
