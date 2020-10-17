@@ -1,4 +1,5 @@
-import { Rectangle, Square } from "./Rectangle";
+import {Rectangle} from "./Rectangle";
+import {Square} from "./Square";
 
 export const useIt = (r: Rectangle): number => {
   const width: number = r.getWidth();
