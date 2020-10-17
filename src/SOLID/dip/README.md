@@ -1,10 +1,10 @@
 ### Dependency Inversion Principle
-* Higher level module should not depend on lower level module.
+* Higher level module should not depend on lower level module
 instead, they should use abstraction.
 * Abstraction should not depend upon on details.
 Details should depend on abstraction.
 
-In our example
+In example,
 > Research is a higher level modules, since 
 > it works on lower level module Relationship.
 > oldResearch method violates 

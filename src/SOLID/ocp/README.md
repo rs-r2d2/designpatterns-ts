@@ -15,4 +15,4 @@ In example,
 > by allowing the filter to be passed as argument. 
 > Thus, it is open for extension.
 > To add a new filter you will no longer need to
-> to modify the implementation.
+> modify the implementation.
