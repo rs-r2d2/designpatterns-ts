@@ -11,7 +11,7 @@ export default class Research {
 
     /**
      * Makes High Level module (Research), dependent on Lower module (Relation)
-     * Since, it uses functions from relations module.
+     * Since, it uses methods from relations module.
      *
      * @param relationships - Relationships on which to research
      */
@@ -26,7 +26,7 @@ export default class Research {
     /**
      *
      * Makes High Level module (Research), independent of Lower module (Relation),
-     * Since, it does not use function from lower level module.
+     * Since, it does not use methods from lower level module.
      * Instead use abstraction.
      * Details are dependent on Abstraction. (RelationShipBrowser Interface)
      * @param browser - What research should be done.

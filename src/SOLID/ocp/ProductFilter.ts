@@ -26,6 +26,8 @@ export class ProductFilter {
 
   /**
    * Filters by size and color
+   * Violates Open Closed Principle principle, because this is not extendable.
+   *
    * @param products -
    * @param size -
    * @param color -

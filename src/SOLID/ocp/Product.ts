@@ -28,4 +28,8 @@ export class Product {
    * @param size -
    */
   constructor(public name: string, public color: Color, public size: Size) {}
+
+  getName() {
+    return this.name;
+  }
 }
